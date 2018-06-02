@@ -1,0 +1,191 @@
+/*desktop view*/
+body {
+  width: 100%;
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+footer {
+  width: 100%;
+}
+
+.bar {
+  border: 3px solid gray;
+}
+
+.logocontainer {
+  padding-top: 20px;
+}
+
+.featured {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 3%;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  padding-bottom: 10px;
+}
+
+.worktext {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding: 1px;
+  margin: 1px;
+}
+
+#logo {
+  width: 75px;
+  padding-left: 1%
+}
+
+#yamile {
+  padding-right: 5px;
+  margin-right: 20px;
+  padding-bottom: 1px;
+  margin-bottom: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+  padding-top: 2px;
+  margin-top: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#featuretitle {
+  font-family: 'Montserrat', sans-serif;
+  color: #D3D3D3;
+  font-size: 20px;
+  padding-left: 2%;
+}
+
+/* medium screens*/
+
+@media screen and (max-width: 1080px ) and (min-width:600px){
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #featuretitle {
+    padding-left: 2%;
+
+  }
+
+  #mainimage {
+    width:80%;
+  }
+
+  .featured {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .worktext {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 1px;
+    margin: 1px;
+  }
+
+  .work {
+    padding-bottom: 7px;
+  }
+
+  .image {
+    width: 50%;
+  }
+
+  #mainimage {
+    width:90%;
+  }
+
+  #yamile{
+    font-size: 25px;
+  }
+
+  #title {
+    font-size: 100%;
+  }
+}
+
+/* mobile screens*/
+
+@media screen and (max-width:600px){
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 1%;
+  }
+
+  #featuretitle {
+    padding-left: 2%;
+  }
+
+  #mainimage {
+    width:80%;
+  }
+
+  .namecontainer {
+    padding-right: 1%;
+  }
+
+  .featured {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .worktext {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    padding: 1px;
+    margin: 1px;
+  }
+
+  .work {
+    padding-bottom: 7px;
+  }
+
+  #mainimage {
+    width:90%;
+  }
+
+  #yamile{
+    font-size: 100%;
+  }
+
+  #title {
+    font-size: 100%;
+  }
+}
